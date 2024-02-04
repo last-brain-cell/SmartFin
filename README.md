@@ -34,7 +34,7 @@ SmartFin Planner aims to empower users to make informed financial decisions by o
 - FastAPI
 - SQLAlchemy
 - Pydantic
-- SQLite (for development/testing)
+- Postgres (for development/testing)
 
 ## Installation
 
