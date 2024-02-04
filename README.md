@@ -71,13 +71,7 @@ Once the application is running, you can access it through your web browser or A
 - `PUT /api/v1/users/{user_id}`: Update existing user
 - `DELETE /api/v1/users/{user_id}`: Delete existing user
 
-### (Add endpoints for other resources as needed)
-
 For detailed documentation on API endpoints, refer to the interactive API documentation provided by FastAPI.
-
-## Contributing
-
-Contributions to SmartFin Planner are welcome! If you find any bugs, have feature requests, or want to contribute code, please open an issue or submit a pull request on GitHub.
 
 ## License
 
