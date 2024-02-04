@@ -1,0 +1,5 @@
+SQLAlchemy~=2.0.25
+psycopg2
+pydantic~=2.6.0
+fastapi~=0.109.1
+uvicorn
