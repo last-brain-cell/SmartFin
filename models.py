@@ -1,6 +1,8 @@
-from sqlalchemy import Column, Integer, String, Text, Date, DECIMAL, ForeignKey
-from sqlalchemy.orm import relationship
-from database import Base
+import os
+from sqlalchemy import Column, Integer, String, Text, Date, DECIMAL, ForeignKey, create_engine
+from sqlalchemy.orm import relationship, sessionmaker, declarative_base
+
+Base = declarative_base()
 
 
 class User(Base):
@@ -95,3 +97,9 @@ class Investment(Base):
     investment_date = Column(Date)
 
     user = relationship("User", back_populates="investments")
+
+
+if __name__ == "__main__":
+    engine = create_engine(os.environ.get("DATABASE_URL"))
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+    Base.metadata.create_all(bind=engine)
