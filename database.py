@@ -22,5 +22,5 @@ def get_db():
         db.close()
 
 
-if not tables_exist(engine):
-    Base.metadata.create_all(bind=engine)
+# if not tables_exist(engine):
+Base.metadata.create_all(bind=engine)

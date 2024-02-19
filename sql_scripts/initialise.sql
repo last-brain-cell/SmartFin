@@ -5,7 +5,6 @@ CREATE TABLE "user" (
     email VARCHAR(100) UNIQUE NOT NULL,
     profile_id INT UNIQUE,
     balance DECIMAL(12, 2),
-    FOREIGN KEY (profile_id) REFERENCES profile(profile_id)
 );
 
 CREATE TABLE profile (
